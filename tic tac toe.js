@@ -3,6 +3,7 @@ const resetButton = document.getElementById("reset");
 const resetScoreButton = document.getElementById("resetScore");
 const clickSound = document.getElementById("clickSound");
 const winSound = document.getElementById("winSound");
+const drawSound = document.getElementById("drawSound");
 const winnerMessage = document.getElementById("winnerMessage");
 const scoreX = document.getElementById("scoreX");
 const scoreO = document.getElementById("scoreO");
@@ -42,6 +43,7 @@ function handleMove(event) {
           return;
       }
       if (!boardState.includes("")) {
+        drawSound.play();
         winnerMessage.textContent = " a Draw !";
         winnerMessage.style.display = "block";
         return;
