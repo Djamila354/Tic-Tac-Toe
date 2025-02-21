@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(92, 158, 205);
+    overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: -20px;
+}
+.player-info {
+  font-size: 2em;
+  font-weight: bold;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    border: 2px solid rgb(194, 189, 189);
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #959090;
+}
+#reset {
+  background-color: #ffffff;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    color: rgb(28, 28, 28);
+    border-radius: 5px;
+}
+ #resetScore {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none;
+  background-color: #eaeef3;
+  color: rgb(6, 6, 6);
+  border-radius: 5px;
+}
+#reset:hover, #resetScore:hover {
+  background-color: #0056b3;
+}
+#winnerMessage {
+  font-size: 2em;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+  display: none;
+}
+#scoreboard {
+  margin-top: 20px;
+  font-size: 2.5em;
+}
